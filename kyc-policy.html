@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Customer (KYC) Policy - RELIER GROUP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-bg: #3a3d47;
+            --darker-bg: #2d2f36;
+            --darkest-bg: #1f2025;
+            --accent-pink: #ff3366;
+            --accent-pink-hover: #ff5577;
+            --text-white: #ffffff;
+            --text-gray: #a8a9ad;
+            --border-gray: #4a4d57;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-white);
+            background: var(--darkest-bg);
+        }
+
+        header {
+            background: var(--dark-bg);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: var(--accent-pink);
+        }
+
+        .back-link {
+            color: var(--text-white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-pink);
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: var(--accent-pink);
+        }
+
+        .metadata {
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .metadata p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            margin: 0.3rem 0;
+        }
+
+        .metadata strong {
+            color: var(--text-white);
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            color: var(--text-white);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+            color: var(--text-white);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+
+        ul {
+            margin: 1rem 0 1.5rem 2rem;
+            color: var(--text-gray);
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            line-height: 1.7;
+        }
+
+        strong, b {
+            color: var(--text-white);
+        }
+
+        .highlight {
+            background: rgba(255, 51, 102, 0.1);
+            padding: 1.5rem;
+            border-left: 3px solid var(--accent-pink);
+            margin: 2rem 0;
+            border-radius: 3px;
+        }
+
+        .highlight p {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box {
+            background: rgba(33, 150, 243, 0.1);
+            border-left: 3px solid #2196f3;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 3px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--darker-bg);
+        }
+
+        table th {
+            background: var(--dark-bg);
+            color: var(--text-white);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 500;
+            border-bottom: 2px solid var(--accent-pink);
+        }
+
+        table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-gray);
+            color: var(--text-gray);
+        }
+
+        table tr:last-child td {
+            border-bottom: none;
+        }
+
+        footer {
+            background: var(--darker-bg);
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-gray);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-pink);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 2rem 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .logo-text {
+                font-size: 1.4rem;
+                letter-spacing: 4px;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            table th, table td {
+                padding: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-text">RELIER</span>
+            </a>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Know Your Customer (KYC) Policy</h1>
+
+        <div class="metadata">
+            <p><strong>Effective Date:</strong> September 24, 2025</p>
+            <p><strong>Last Updated:</strong> September 24, 2025</p>
+            <p><strong>Company:</strong> Relier Group, LLC</p>
+        </div>
+
+        <h2>1. Policy Statement</h2>
+        <p>Relier Group, LLC ("Relier") is committed to maintaining the highest standards of customer identification and verification in accordance with the Bank Secrecy Act (BSA), USA PATRIOT Act, and FinCEN Customer Due Diligence (CDD) Rule. This Know Your Customer (KYC) Policy establishes our procedures for verifying the identity of all customers and beneficial owners.</p>
+
+        <div class="highlight">
+            <p><strong>Core Principle:</strong> No business relationship will be established or transaction processed until satisfactory customer identification has been obtained and verified.</p>
+        </div>
+
+        <h2>2. KYC Objectives</h2>
+        <p>Our KYC program is designed to:</p>
+        <ul>
+            <li>Verify the true identity of all customers</li>
+            <li>Understand the nature and purpose of customer relationships</li>
+            <li>Identify beneficial owners of legal entity customers</li>
+            <li>Assess and monitor money laundering and terrorist financing risks</li>
+            <li>Comply with all applicable legal and regulatory requirements</li>
+            <li>Protect Relier and its customers from financial crime</li>
+        </ul>
+
+        <h2>3. Customer Identification Requirements</h2>
+
+        <h3>3.1 Individual Customers</h3>
+        <p>For all individual customers, we collect and verify:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Information Required</th>
+                    <th>Acceptable Documentation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Full Legal Name</strong></td>
+                    <td>Government-issued ID</td>
+                </tr>
+                <tr>
+                    <td><strong>Date of Birth</strong></td>
+                    <td>Government-issued ID, Birth Certificate</td>
+                </tr>
+                <tr>
+                    <td><strong>Residential Address</strong></td>
+                    <td>Utility bill, Bank statement, Lease agreement (within 90 days)</td>
+                </tr>
+                <tr>
+                    <td><strong>Government ID Number</strong></td>
+                    <td>Driver's License, Passport, State ID, National ID</td>
+                </tr>
+                <tr>
+                    <td><strong>Tax Identification</strong></td>
+                    <td>SSN (U.S.), EIN, Foreign Tax ID</td>
+                </tr>
+                <tr>
+                    <td><strong>Contact Information</strong></td>
+                    <td>Phone number (verified), Email address (verified)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3.2 Business Customers</h3>
+        <p>For legal entity customers (corporations, LLCs, partnerships, etc.), we collect:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Information Required</th>
+                    <th>Acceptable Documentation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Legal Business Name</strong></td>
+                    <td>Certificate of Incorporation, Business License</td>
+                </tr>
+                <tr>
+                    <td><strong>Business Address</strong></td>
+                    <td>Utility bill, Lease agreement, Business bank statement</td>
+                </tr>
+                <tr>
+                    <td><strong>Business Type & Structure</strong></td>
+                    <td>Articles of Incorporation, Partnership Agreement</td>
+                </tr>
+                <tr>
+                    <td><strong>Jurisdiction of Formation</strong></td>
+                    <td>Certificate of Good Standing</td>
+                </tr>
+                <tr>
+                    <td><strong>Tax ID (EIN)</strong></td>
+                    <td>IRS EIN Letter, Tax Registration Certificate</td>
+                </tr>
+                <tr>
+                    <td><strong>Business License</strong></td>
+                    <td>State/Local Business License</td>
+                </tr>
+                <tr>
+                    <td><strong>Authorized Representatives</strong></td>
+                    <td>Board Resolution, Power of Attorney</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3.3 Beneficial Ownership Identification</h3>
+        <p>For all legal entity customers, we must identify and verify:</p>
+
+        <div class="info-box">
+            <p><strong>Beneficial Owners:</strong> Individuals who own or control 25% or more of the entity, plus one individual with significant responsibility for managing the entity (e.g., CEO, CFO, Managing Director).</p>
+        </div>
+
+        <p>Required documentation for each beneficial owner:</p>
+        <ul>
+            <li>Full legal name and date of birth</li>
+            <li>Residential address</li>
+            <li>Government-issued photo ID</li>
+            <li>Percentage of ownership</li>
+            <li>Role/title in the organization</li>
+            <li>Copy of organizational documents showing ownership structure</li>
+        </ul>
+
+        <h2>4. Verification Methods</h2>
+
+        <h3>4.1 Documentary Verification</h3>
+        <p>Documents must be:</p>
+        <ul>
+            <li>Original or certified copies</li>
+            <li>Current and unexpired</li>
+            <li>Issued by a reliable source (government, financial institution)</li>
+            <li>Contain a photograph (for identity documents)</li>
+            <li>Legible and unaltered</li>
+        </ul>
+
+        <h3>4.2 Non-Documentary Verification</h3>
+        <p>Additional verification methods include:</p>
+        <ul>
+            <li>Credit bureau reports</li>
+            <li>Third-party identity verification services</li>
+            <li>Database cross-referencing</li>
+            <li>Biometric verification (facial recognition, fingerprints)</li>
+            <li>Knowledge-based authentication (KBA)</li>
+            <li>Live video verification</li>
+        </ul>
+
+        <h3>4.3 Electronic Verification</h3>
+        <p>We use trusted third-party services for:</p>
+        <ul>
+            <li>Document authenticity verification</li>
+            <li>Liveness detection (anti-spoofing)</li>
+            <li>Biometric matching</li>
+            <li>Address verification</li>
+            <li>Adverse media screening</li>
+        </ul>
+
+        <h2>5. Risk-Based Approach</h2>
+
+        <h3>5.1 Customer Risk Rating</h3>
+        <p>All customers are assigned a risk rating:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Risk Level</th>
+                    <th>Characteristics</th>
+                    <th>Due Diligence Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Low Risk</strong></td>
+                    <td>Individual, domestic, known employer, stable income, low transaction volumes</td>
+                    <td>Standard CDD</td>
+                </tr>
+                <tr>
+                    <td><strong>Medium Risk</strong></td>
+                    <td>Small business, moderate volumes, some international activity</td>
+                    <td>Standard CDD + Ongoing Monitoring</td>
+                </tr>
+                <tr>
+                    <td><strong>High Risk</strong></td>
+                    <td>PEPs, high-risk jurisdictions, cash-intensive business, complex structures</td>
+                    <td>Enhanced Due Diligence (EDD)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>5.2 Enhanced Due Diligence Triggers</h3>
+        <p>EDD is required when customers:</p>
+        <ul>
+            <li>Are Politically Exposed Persons (PEPs) or close associates</li>
+            <li>Operate in high-risk industries (money services, gambling, precious metals)</li>
+            <li>Conduct business in high-risk or sanctioned countries</li>
+            <li>Have complex ownership structures or nominee arrangements</li>
+            <li>Request unusually high transaction limits</li>
+            <li>Have adverse media or legal proceedings</li>
+            <li>Use third-party funding sources</li>
+            <li>Are non-profit organizations or charities</li>
+        </ul>
+
+        <h3>5.3 Enhanced Due Diligence Requirements</h3>
+        <p>EDD includes all standard CDD requirements plus:</p>
+        <ul>
+            <li>Source of wealth verification</li>
+            <li>Source of funds verification for each transaction</li>
+            <li>Purpose of account and expected activity</li>
+            <li>Business relationships and counterparties</li>
+            <li>Adverse media and reputation checks</li>
+            <li>Sanctions and PEP screening of beneficial owners and associates</li>
+            <li>On-site visits (for business customers)</li>
+            <li>Senior management approval</li>
+            <li>More frequent periodic reviews (at least annually)</li>
+        </ul>
+
+        <h2>6. Politically Exposed Persons (PEPs)</h2>
+
+        <h3>6.1 PEP Definition</h3>
+        <p>PEPs include individuals who hold or have held prominent public positions:</p>
+        <ul>
+            <li>Heads of state or government</li>
+            <li>Senior politicians and legislators</li>
+            <li>Senior government officials</li>
+            <li>Judicial officials</li>
+            <li>Military officers</li>
+            <li>State-owned enterprise executives</li>
+            <li>Political party officials</li>
+            <li>Immediate family members and close associates of PEPs</li>
+        </ul>
+
+        <h3>6.2 PEP Procedures</h3>
+        <ul>
+            <li>Automated screening against PEP databases</li>
+            <li>Enhanced due diligence required</li>
+            <li>Senior management approval for onboarding</li>
+            <li>Continuous monitoring of PEP status</li>
+            <li>Ongoing review of transactions and activities</li>
+        </ul>
+
+        <h2>7. Ongoing Monitoring and Review</h2>
+
+        <h3>7.1 Continuous Monitoring</h3>
+        <p>All customer relationships are subject to ongoing monitoring:</p>
+        <ul>
+            <li>Real-time transaction monitoring</li>
+            <li>Daily sanctions screening</li>
+            <li>Adverse media monitoring</li>
+            <li>Behavioral analysis</li>
+        </ul>
+
+        <h3>7.2 Periodic Review Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Risk Level</th>
+                    <th>Review Frequency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Low Risk</strong></td>
+                    <td>Every 3 years</td>
+                </tr>
+                <tr>
+                    <td><strong>Medium Risk</strong></td>
+                    <td>Every 2 years</td>
+                </tr>
+                <tr>
+                    <td><strong>High Risk</strong></td>
+                    <td>Annually or more frequently</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>7.3 Review Triggers</h3>
+        <p>Additional reviews are triggered by:</p>
+        <ul>
+            <li>Significant change in transaction patterns</li>
+            <li>Customer information updates</li>
+            <li>New sanctions list matches</li>
+            <li>Adverse media hits</li>
+            <li>Suspicious activity alerts</li>
+            <li>Customer risk rating changes</li>
+        </ul>
+
+        <h2>8. Sanctions and Watchlist Screening</h2>
+        <p>All customers and transactions are screened against:</p>
+        <ul>
+            <li><strong>OFAC:</strong> SDN List, Consolidated Sanctions List</li>
+            <li><strong>UN:</strong> Security Council Sanctions Lists</li>
+            <li><strong>EU:</strong> Consolidated Financial Sanctions List</li>
+            <li><strong>FBI:</strong> Most Wanted Lists</li>
+            <li><strong>Interpol:</strong> Red Notices</li>
+            <li><strong>PEP Databases:</strong> World-Check, Dow Jones, etc.</li>
+            <li><strong>Adverse Media:</strong> Negative news screening</li>
+        </ul>
+
+        <h2>9. Simplified Due Diligence</h2>
+        <p>Simplified due diligence may be applied only for exceptionally low-risk customers:</p>
+        <ul>
+            <li>Financial institutions regulated in the U.S. or equivalent jurisdictions</li>
+            <li>Publicly traded companies listed on major exchanges</li>
+            <li>Government entities (U.S. federal, state, or local)</li>
+        </ul>
+
+        <div class="highlight">
+            <p><strong>Note:</strong> Simplified due diligence still requires identity verification, sanctions screening, and ongoing monitoring. It cannot be used for customers from high-risk jurisdictions.</p>
+        </div>
+
+        <h2>10. Record Keeping</h2>
+        <p>We maintain records of all KYC documentation:</p>
+        <ul>
+            <li><strong>Retention period:</strong> Minimum 5 years after account closure</li>
+            <li><strong>Storage:</strong> Secure, encrypted, access-controlled systems</li>
+            <li><strong>Records include:</strong>
+                <ul>
+                    <li>All identification documents</li>
+                    <li>Verification results</li>
+                    <li>Risk assessments</li>
+                    <li>Beneficial ownership information</li>
+                    <li>Periodic review reports</li>
+                    <li>Customer correspondence</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>11. Account Denial and Termination</h2>
+
+        <h3>11.1 Grounds for Denial</h3>
+        <p>We will refuse to establish a business relationship if:</p>
+        <ul>
+            <li>Customer refuses to provide required information</li>
+            <li>Documents cannot be verified or are suspected to be fraudulent</li>
+            <li>Customer matches sanctions lists</li>
+            <li>Customer is from a prohibited jurisdiction</li>
+            <li>Risk level exceeds our risk appetite</li>
+            <li>Customer fails enhanced due diligence</li>
+        </ul>
+
+        <h3>11.2 Account Termination</h3>
+        <p>We will terminate existing relationships if:</p>
+        <ul>
+            <li>Customer fails to provide updated information during periodic review</li>
+            <li>New sanctions matches are identified</li>
+            <li>Suspicious activity cannot be satisfactorily explained</li>
+            <li>Customer violates terms of service</li>
+            <li>Risk level becomes unacceptable</li>
+        </ul>
+
+        <h2>12. Employee Training</h2>
+        <p>All employees involved in customer onboarding receive:</p>
+        <ul>
+            <li>Initial KYC training within 30 days of hire</li>
+            <li>Annual refresher training</li>
+            <li>Updates when procedures change</li>
+            <li>Testing to verify comprehension</li>
+        </ul>
+
+        <h2>13. Technology and Automation</h2>
+        <p>Relier employs advanced KYC technology including:</p>
+        <ul>
+            <li>Automated identity verification platforms</li>
+            <li>Document authentication and fraud detection</li>
+            <li>Biometric verification (facial recognition, liveness detection)</li>
+            <li>Real-time sanctions and PEP screening</li>
+            <li>Risk scoring algorithms</li>
+            <li>Case management systems</li>
+        </ul>
+
+        <h2>14. Data Privacy and Protection</h2>
+        <p>All KYC data is handled in compliance with:</p>
+        <ul>
+            <li>GDPR (for EU customers)</li>
+            <li>CCPA (for California customers)</li>
+            <li>Other applicable data protection laws</li>
+            <li>Our Privacy Policy</li>
+        </ul>
+
+        <h2>15. Escalation and Approval</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Decision Type</th>
+                    <th>Approval Required</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Standard onboarding (Low/Medium risk)</td>
+                    <td>Compliance Officer or Designee</td>
+                </tr>
+                <tr>
+                    <td>High-risk customers</td>
+                    <td>Senior Compliance Officer</td>
+                </tr>
+                <tr>
+                    <td>PEPs</td>
+                    <td>Chief Compliance Officer</td>
+                </tr>
+                <tr>
+                    <td>Account denial or termination</td>
+                    <td>Compliance Officer + Legal Review</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>16. Policy Review</h2>
+        <p>This KYC Policy is reviewed and updated:</p>
+        <ul>
+            <li>Annually as part of compliance program audit</li>
+            <li>When regulations change</li>
+            <li>Following significant compliance events</li>
+            <li>When business model or risk profile changes</li>
+        </ul>
+
+        <h2>17. Contact Information</h2>
+        <div class="highlight">
+            <p><strong>KYC Compliance Team</strong><br>
+            Relier Group, LLC<br>
+            Email: <a href="mailto:compliance@relier.group" style="color: var(--accent-pink);">compliance@relier.group</a><br>
+            Phone: +1 (954) 998-3887<br>
+            Attn: KYC Verification Department</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 RELIER GROUP. All rights reserved. | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a> | <a href="aml-policy.html">AML Policy</a></p>
+    </footer>
+</body>
+</html>
